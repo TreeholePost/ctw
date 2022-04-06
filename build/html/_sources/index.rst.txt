@@ -13,7 +13,6 @@ The project is hosted on GitHub and is open to collaboration. Researchers, journ
 .. _email: mailto:chinatechwiki@gmail.com
 
 .. toctree::
-   :hidden:
    :maxdepth: 2
    :caption: Contents:
 
