@@ -1,6 +1,8 @@
 name: docs_pages_workflow
 
 on:
+  workflow_dispatch:
+    branches: [main]
   push:
     branches: [main]
   pull_request:
