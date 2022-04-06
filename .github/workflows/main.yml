@@ -34,7 +34,7 @@ jobs:
           make html
       
       - name: Init new repo and commit
-        run:
+        run: |
           cd build/html/
           git init
           touch .nojekyll
