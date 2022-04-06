@@ -1,6 +1,8 @@
 name: docs_pages_workflow
 
 on:
+  workflow_dispatch:
+    branches: [main]
   push:
     branches: [main]
   pull_request:
@@ -29,11 +31,10 @@ jobs:
 
       - name: Make Sphinx Docs
         run:
-          make -C docs clean
-          make -C docs html
+          make html
       
       - name: Init new repo and commit
-        run:
+        run: |
           cd build/html/
           git init
           touch .nojekyll
